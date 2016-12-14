@@ -1,2 +1,11 @@
 /thread_wrapper/Debug
 /thread_wrapper/thread_wrapper.sln
+/ipch/test_wrappers-b6839843
+/test_wrappers/Debug
+/test_wrappers/*.filters
+/vector_wrapper/Debug
+/vector_wrapper/*.filters
+/*.sdf
+/*.suo
+/thread_wrapper/*.filters
+/*.opensdf

@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7A59C76E-0012-4F35-A46D-CE4148DB5C45}</ProjectGuid>
+    <ProjectGuid>{BC07359C-3FE3-48AA-9096-805E38F78BA6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>thread_wrapper</RootNamespace>
+    <RootNamespace>vector_wrapper</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -79,12 +79,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Thread.h" />
-    <ClInclude Include="ThreadsQueue.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Thread.cpp" />
-    <ClCompile Include="ThreadsQueue.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
