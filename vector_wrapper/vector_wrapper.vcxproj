@@ -78,13 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="cVector.h" />
+    <ClInclude Include="_Vector.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cVector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_Vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

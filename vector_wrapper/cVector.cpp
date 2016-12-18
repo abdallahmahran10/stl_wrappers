@@ -1,8 +1,7 @@
 #include "cVector.h"
-long Vector::a=0;
 
 TEMPLATE
-cVector<T>::cVector(void *tagObj):_mSorted(true),_mKey(a++)
+cVector<T>::cVector(void *tagObj):_mSorted(true),_mKey(_Vector::count++)
 {
 	_mTag = tagObj;
 }
@@ -10,9 +9,9 @@ cVector<T>::cVector(void *tagObj):_mSorted(true),_mKey(a++)
 
 TEMPLATE
 void cVector<T>::add(T elm)
-{
+{ 
 	_mSorted = false;
-	_mVector.push_back(elm);
+	_mContainer.push_back(elm);
 }
 
 
@@ -32,14 +31,31 @@ void cVector<T>::sortDes()
 
 
 TEMPLATE
-std::string cVector<T>::toString(std::string (*pf)(T&), const std::string& sep = ",") const
+std::string cVector<T>::toString(std::string (*pf)(const T&), const std::string& sep = ",") const
 {
 	if(len()<1)
 		return "";
-
-	std::stringstream ss = pf(_mVector[0]);
-	for(ITER it= next( _mVector.begin()); it != _mVector.end(); ++it)
+	std::stringstream ss;
+	ss<<_mContainer[0];
+	vecConstIterator it = next(_mContainer.begin()); 
+	for(; it != _mContainer.end(); ++it)
 		ss<< sep <<pf(*it);
+
+	return ss.str();
+
+}
+
+TEMPLATE
+std::string cVector<T>::toString(const std::string& sep = ",") const
+{
+	if(len()<1)
+		return "";
+	std::stringstream ss;
+	ss<<_mContainer[0];
+
+	vecConstIterator it = next(_mContainer.begin());
+	for(; it != _mContainer.end(); ++it)
+		ss<< sep << *it;
 
 	return ss.str();
 
