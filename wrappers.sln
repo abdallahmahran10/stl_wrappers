@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector_wrapper", "vector_wrapper\vector_wrapper.vcxproj", "{BC07359C-3FE3-48AA-9096-805E38F78BA6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrappers", "wrappers\wrappers.vcxproj", "{9D5000A9-F261-453B-8F19-48DF730DA90F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9EB03A9-DCFA-46D4-9EFC-E081530EA222} = {C9EB03A9-DCFA-46D4-9EFC-E081530EA222}
+	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread_wrapper", "thread_wrapper\thread_wrapper.vcxproj", "{7A59C76E-0012-4F35-A46D-CE4148DB5C45}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_wrappers", "test_wrappers\test_wrappers.vcxproj", "{08F97F13-4846-45E3-9DB3-ECDBA517FA02}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector_wrapper", "vector_wrapper\vector_wrapper.vcxproj", "{C9EB03A9-DCFA-46D4-9EFC-E081530EA222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +14,14 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC07359C-3FE3-48AA-9096-805E38F78BA6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{BC07359C-3FE3-48AA-9096-805E38F78BA6}.Debug|Win32.Build.0 = Debug|Win32
-		{BC07359C-3FE3-48AA-9096-805E38F78BA6}.Release|Win32.ActiveCfg = Release|Win32
-		{BC07359C-3FE3-48AA-9096-805E38F78BA6}.Release|Win32.Build.0 = Release|Win32
-		{7A59C76E-0012-4F35-A46D-CE4148DB5C45}.Debug|Win32.ActiveCfg = Debug|Win32
-		{7A59C76E-0012-4F35-A46D-CE4148DB5C45}.Debug|Win32.Build.0 = Debug|Win32
-		{7A59C76E-0012-4F35-A46D-CE4148DB5C45}.Release|Win32.ActiveCfg = Release|Win32
-		{7A59C76E-0012-4F35-A46D-CE4148DB5C45}.Release|Win32.Build.0 = Release|Win32
-		{08F97F13-4846-45E3-9DB3-ECDBA517FA02}.Debug|Win32.ActiveCfg = Debug|Win32
-		{08F97F13-4846-45E3-9DB3-ECDBA517FA02}.Debug|Win32.Build.0 = Debug|Win32
-		{08F97F13-4846-45E3-9DB3-ECDBA517FA02}.Release|Win32.ActiveCfg = Release|Win32
-		{08F97F13-4846-45E3-9DB3-ECDBA517FA02}.Release|Win32.Build.0 = Release|Win32
+		{9D5000A9-F261-453B-8F19-48DF730DA90F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D5000A9-F261-453B-8F19-48DF730DA90F}.Debug|Win32.Build.0 = Debug|Win32
+		{9D5000A9-F261-453B-8F19-48DF730DA90F}.Release|Win32.ActiveCfg = Release|Win32
+		{9D5000A9-F261-453B-8F19-48DF730DA90F}.Release|Win32.Build.0 = Release|Win32
+		{C9EB03A9-DCFA-46D4-9EFC-E081530EA222}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9EB03A9-DCFA-46D4-9EFC-E081530EA222}.Debug|Win32.Build.0 = Debug|Win32
+		{C9EB03A9-DCFA-46D4-9EFC-E081530EA222}.Release|Win32.ActiveCfg = Release|Win32
+		{C9EB03A9-DCFA-46D4-9EFC-E081530EA222}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

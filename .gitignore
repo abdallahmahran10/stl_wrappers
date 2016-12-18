@@ -9,3 +9,17 @@
 /*.suo
 /thread_wrapper/*.filters
 /*.opensdf
+/bin/Debug/*.tlog
+/bin/Debug/*.obj
+/bin/Debug/*.idb
+/wrappers/Debug/*.ilk
+/wrappers/Debug/*.obj
+/wrappers/Debug/*.idb
+/wrappers/Debug/*.exe
+/wrappers/Debug/*.log
+/bin/Debug/*.log
+*.ipch
+*.pdb
+*.lastbuildstate
+*.pch
+*.filters
