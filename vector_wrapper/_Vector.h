@@ -1,8 +1,17 @@
-#pragma once
+/*
+ * Author: Abdallah Mahran
+ * file: cVector.h
+ * Description: Wrap c+++ vector class
+*/
+
+#ifndef _VECTOR_H
+#define _VECTOR_H
 
 template<typename T> class cVector;
 
 
+
+/******************** _Vector Class ********************/
 /* Created only to have some static variables 
  * along all types of cVector
 */
@@ -18,3 +27,4 @@ private:
 	static long count;
 };
 
+#endif

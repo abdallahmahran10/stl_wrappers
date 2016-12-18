@@ -16,10 +16,8 @@
 /**************** DEFINES ****************/
 #define stl_vector std::vector
 #define TEMPLATE template<typename T>
+
 /****************** STATIC VARIABLES ******************/
-
-
-/******************** Vector Class ********************/
 
 
 /********************** cVector Class ********************/
