@@ -3,9 +3,9 @@ Wrapper to some C++ STL classes
 
 In progress
 ===========
-- thread wrapper
+- Vector wrapper
 
 Planned
 =======
-- Vector wrapper
+- thread wrapper
 - Map wrapper
