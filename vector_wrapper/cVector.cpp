@@ -19,14 +19,14 @@ TEMPLATE
 void cVector<T>::sortAsc()
 {
 	if(!_mSorted)
-		std::sort(_mcVector.begin(), _mcVector.end());
+		std::sort(_mContainer.begin(), _mContainer.end());
 }
 
 TEMPLATE
-void cVector<T>::sortDes()
+void cVector<T>::sortDesc()
 {
 	if(!_mSorted)
-		std::sort(_mcVector.rbegin(), _mcVector.rend());
+		std::sort(_mContainer.rbegin(), _mContainer.rend());
 }
 
 
@@ -42,7 +42,6 @@ std::string cVector<T>::toString(std::string (*pf)(const T&), const std::string&
 		ss<< sep <<pf(*it);
 
 	return ss.str();
-
 }
 
 TEMPLATE

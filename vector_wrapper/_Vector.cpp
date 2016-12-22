@@ -5,6 +5,7 @@ long _Vector::count=0;
 
 _Vector::_Vector(void)
 {
+
 }
 
 

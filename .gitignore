@@ -24,3 +24,5 @@
 *.pch
 *.filters
 *.tlog
+/Debug
+/stl_wrappers_test/Debug

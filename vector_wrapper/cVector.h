@@ -11,6 +11,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 #include "_Vector.h"
 
 /**************** DEFINES ****************/
@@ -48,7 +49,7 @@ public:
 	//
 	void add(T elm);
 	void sortAsc();
-	void sortDes();
+	void sortDesc();
 	std::string toString(std::string (*pf)(const T&), const std::string& sep = ",") const;
 	// for basic types vector
 	std::string toString(const std::string& sep = ",") const;

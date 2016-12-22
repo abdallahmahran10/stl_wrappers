@@ -4,16 +4,12 @@
 //
 
 #pragma once
-#include <stdio.h>
-#include <tchar.h>
-#include <iostream>
-#include <string>
-#include <sstream>
-#include "cVector.h"
 
+#include "targetver.h"
 
-#include "cThread.h"
-
-
+// Headers for CppUnitTest
+#include "CppUnitTest.h"
 
 // TODO: reference additional headers your program requires here
+#include "cVector.h"
+#include "TestUtils.h"
